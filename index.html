@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/985baca04b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+           <nav>
+            <img src="images/logo.jpg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">services</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact"> Contact</a></li>
+                <i class="fa-solid fa-square-xmark" onclick="closemenu()" ></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+           </nav> 
+           <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1> Hi, I'm <span> Pankaj</span> 
+                <br>Agale   <BR>from Pune </h1>
+           </div>
+        </div>
+    </div>
+    
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                <img src="images/WhatsApp Image 2024-01-07 at 1.03.39 PM.png"> 
+            </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+            
+                <p>Hello my name is Pankaj Agale.I'm from Pune</p>
+                <div class="tab-titles">
+                <P class="tab-links active-links" onclick="opentab('Skills')">Skills</P>
+                <P class="tab-linksactive-links"onclick="opentab('Education')">Education</P>
+                </div>
+            
+                <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>UI/UX</span><br> Designing web/App interfaces</li>
+                    <li><span>Web Development</span><br> web App Development</li>
+                </ul>
+            </div>
+            </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>2022-2025</span><br> B.E.(Information Technology) from Dr. DY Patil Institute Of Technology</li>
+                    <li><span>2021</span><br> HSC</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2> Web Design</h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, porro qui. Fugit amet, perspiciatis quo expedita dicta voluptatibus cupiditate sint reprehenderit, suscipit impedit,
+                     ducimus temporibus necessitatibus. Odit vel ea cupiditate!</p>
+                     <a href="#"> learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2> UI/UX</h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, porro qui. Fugit amet, perspiciatis quo expedita dicta voluptatibus cupiditate sint reprehenderit, suscipit impedit,
+                     ducimus temporibus necessitatibus. Odit vel ea cupiditate!</p>
+                     <a href="#"> learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>APP Design</h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, porro qui. Fugit amet, perspiciatis quo expedita dicta voluptatibus cupiditate sint reprehenderit, suscipit impedit,
+                     ducimus temporibus necessitatibus. Odit vel ea cupiditate!</p>
+                     <a href="#"> learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------portfolio-----------   -->
+<div id="portfolio">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+        <div class="work">
+            <img src="images/hotel.png" >
+            <div class="layer">
+                <h3>Hotel Booking Website</h3>
+                <p> This Websites helps  customers to book hotel online.</p>
+                    
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/hsoptal mgmt.png" >
+                <div class="layer">
+                    <h3>Hospital Management system</h3>
+                    <p>Worked on Hospital Management Database</p>
+                        
+                </div>
+        </div>
+        <div class="work">
+            <img src="images/ml.jpg" >
+            <div class="layer"></div>
+                    <h3>Video Control Using Hand gesture</h3>
+                    <p> In this we control the video using hand gestures.</p>
+                        
+                </div>
+        </div>
+    </div>
+    <a href="#" class="btn"> See more</a>
+</div>
+</div>
+<!-- -----------contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left"></div>
+            <h1 class="sub-title"> Contact Me</h1>
+            <p> <i class="fa-solid fa-paper-plane"></i> pankajagale282@gmail.com</p>
+            <br>
+            <p> 8857874358</p>
+            <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="pankaj resume(up)-2.pdf"  download class="btn btn2"></a>Download CV</a>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit"> submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>made by  <i class="fa-solid fa-heart"></i>Pankaj Agale</p>
+    </div>
+</div>
+
+<script>
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove(" active-link");
+        }
+    
+    
+        for(tabcontent of tabcontents){
+            tablink.classList.remove(" active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu =document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbw4FQ_TP1jqLMbln114k4O0dKEagxkIQARQXEwAa_T4jHI2zyBWsuU214QMTZPoqCKs_w/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =document.getElementById("msg")  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML= "Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
